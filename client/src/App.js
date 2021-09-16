@@ -2,6 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import Navbar from './components/NavBar';
 import About from "./pages/About";
 import Examples from "./pages/Examples";
+import Avaliable from "./pages/Avaliable";
 import Home from "./pages/Home";
 import Things from "./pages/Things";
 
@@ -10,11 +11,9 @@ function App() {
     <>
     <Navbar />
     <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/things" component={Things} />
+        <Route exact path="/" component={Avaliable} />
         <Route exact path="/examples" component={Examples} />
-      </Switch>
+    </Switch>
     </>
   );
 }
